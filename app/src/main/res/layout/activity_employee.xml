@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".employeeform.EmployeeActivity">
+    <android.support.design.widget.AppBarLayout android:layout_width="match_parent"
+        android:id="@+id/app_bar_personal_edit"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:background="@color/background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/app_bar_margin_top_bottom"
+            android:layout_marginStart="@dimen/app_bar_margin_start"
+            android:layout_marginBottom="@dimen/app_bar_margin_top_bottom">
+            <RelativeLayout
+                android:id="@+id/btn_personal_edit_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Insert Employee Data"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/app_bar_text_Size"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/app_bar_title_margin_start"
+                    fontPath="fonts/Montserrat-Bold.ttf"
+                    android:id="@+id/tv_personal_edit_title"
+                    tools:ignore="HardcodedText,MissingPrefix"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/appbar_shadow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar_personal_edit"
+        android:id="@+id/view"/>
+    <RelativeLayout android:id="@+id/rl_personal_warning" android:background="@color/pink"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar_personal_edit">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="30dp"
+            android:text="Please fill all fields"
+            android:id="@+id/tv_personal_warning"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            />
+        <ImageView
+            android:id="@+id/btn_personal_warning_close"
+            android:layout_centerVertical="true" app:srcCompat="@drawable/ic_recruitment_mobile_icon_close_alert"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="close"
+            android:layout_marginEnd="14dp"
+            android:layout_width="14dp" android:layout_height="14dp"/>
+
+    </RelativeLayout>
+    <ScrollView
+        android:visibility="visible"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/sv_personal_info"
+        app:layout_constraintTop_toBottomOf="@+id/rl_personal_warning"
+        app:layout_constraintBottom_toTopOf="@+id/btn_submit"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="Full Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/item_title_text_size"
+                android:textColor="@color/black"
+                android:id="@+id/tv_personal_edit_position"
+                tools:ignore="HardcodedText,MissingPrefix"
+                android:layout_marginStart="@dimen/tv_title_margin_start_end"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:ems="10"
+                android:textColorHint="@color/black_2"
+                android:textColor="@color/black"
+                android:paddingTop="@dimen/et_padding_top"
+                android:paddingStart="@dimen/et_padding_start"
+                android:paddingBottom="@dimen/et_padding_bottom"
+                android:textSize="@dimen/item_hint_text_size"
+                android:id="@+id/et_personal_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_personal_edit_position"
+                android:hint="Full Name"
+                android:layout_marginStart="@dimen/et_margin_start"
+                android:layout_marginEnd="@dimen/et_margin_end"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="HardcodedText,MissingPrefix"/>
+            <TextView
+                android:textSize="@dimen/item_title_text_size"
+                android:layout_marginTop="@dimen/tv_title_margin_top"
+                android:layout_marginStart="@dimen/tv_title_margin_start_end"
+                android:text="NIK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/tv_personal_nik"
+                tools:ignore="HardcodedText,MissingPrefix"
+                fontPath="fonts/Montserrat-SemiBold.ttf"
+
+                />
+
+            <EditText
+                android:id="@+id/et_personal_nik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/et_margin_start"
+                android:layout_marginEnd="@dimen/et_margin_end"
+                android:ems="10"
+                android:hint="NIK"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingStart="@dimen/et_padding_start"
+                android:paddingTop="@dimen/et_padding_top"
+                android:paddingBottom="@dimen/et_padding_bottom"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black_2"
+                android:textSize="@dimen/item_hint_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="HardcodedText,MissingPrefix" />
+            <TextView
+                android:layout_marginTop="@dimen/tv_title_margin_top"
+                android:text="Place of birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/item_title_text_size"
+                android:textColor="@color/black"
+                android:id="@+id/tv_personal_birth"
+                tools:ignore="HardcodedText,MissingPrefix"
+                fontPath="fonts/Montserrat-SemiBold.ttf"
+                android:layout_marginStart="@dimen/tv_title_margin_start_end"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:ems="10"
+                android:textColorHint="@color/black_2"
+                android:textColor="@color/black"
+                android:paddingTop="@dimen/et_padding_top"
+                android:paddingStart="@dimen/et_padding_start"
+                android:paddingBottom="@dimen/et_padding_bottom"
+                android:textSize="@dimen/item_hint_text_size"
+                fontPath="fonts/Montserrat-Medium.ttf"
+                android:id="@+id/et_personal_birth"
+                android:hint="Birth Place"
+                android:layout_marginStart="@dimen/et_margin_start"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/et_margin_end"
+                tools:ignore="HardcodedText,MissingPrefix"/>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/tv_title_margin_top"
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="21dp"
+                android:id="@+id/btn_personal_date"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth"
+                    fontPath="fonts/Montserrat-SemiBold.ttf"
+                    android:id="@+id/tv_birth_title"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/item_title_text_size"
+                    tools:ignore="HardcodedText,MissingPrefix"/>
+                <RelativeLayout android:layout_width="match_parent"
+                    android:layout_below="@+id/tv_birth_title"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_birth_hint"
+                        android:text="Birth of date"
+                        fontPath="fonts/Montserrat-Medium.ttf"
+                        android:textColor="@color/black_2"
+                        android:layout_marginTop="@dimen/tv_title_margin_top"
+                        android:layout_marginStart="@dimen/item_hint_margin_start"
+                        android:textSize="@dimen/item_hint_text_size"
+                        android:layout_marginBottom="@dimen/item_hint_margin_bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText,MissingPrefix"/>
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        app:srcCompat="@drawable/ic_recruitment_mobile_icon_next_page"
+                        android:layout_width="@dimen/item_arrow_size"
+                        android:contentDescription="@string/arrow_next"
+                        android:layout_marginEnd="@dimen/item_arrow_margin_end"
+                        android:layout_height="@dimen/item_arrow_size"/>
+                </RelativeLayout>
+                <View android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/black_2"
+                    android:layout_height="1dp"/>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="@dimen/tv_title_margin_top"
+                android:text="Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/item_title_text_size"
+                android:textColor="@color/black"
+                android:id="@+id/tv_personal_gender"
+                tools:ignore="HardcodedText,MissingPrefix"
+                fontPath="fonts/Montserrat-SemiBold.ttf"
+                android:layout_marginStart="22dp"
+                />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/tv_title_margin_start_end"
+                android:layout_marginTop="3dp"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/tv_title_margin_top"
+                android:layout_marginStart="@dimen/tv_title_margin_start_end"
+                android:layout_marginEnd="@dimen/tv_title_margin_start_end"
+                android:id="@+id/rl_hobby"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hobby"
+                    android:id="@+id/tv_hobby_title"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/item_title_text_size"
+                    tools:ignore="HardcodedText,MissingPrefix"/>
+                <CheckBox
+                    android:id="@+id/cb_travel"
+                    android:layout_below="@+id/tv_hobby_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Travelling"/>
+                <CheckBox
+                    android:id="@+id/cb_reading"
+                    android:layout_below="@+id/tv_hobby_title"
+                    android:layout_width="wrap_content"
+                    android:layout_toEndOf="@+id/cb_travel"
+                    android:layout_height="wrap_content"
+                    android:text="Reading"/>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="@dimen/tv_title_margin_top"
+                android:text="Address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/item_title_text_size"
+                android:textColor="@color/black"
+                android:id="@+id/tv_address"
+                tools:ignore="HardcodedText,MissingPrefix"
+                android:layout_marginStart="@dimen/tv_title_margin_start_end"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="200"
+                android:maxEms="2"
+                android:maxLines="3"
+                android:textColorHint="@color/black_2"
+                android:textColor="@color/black"
+                android:paddingTop="@dimen/et_padding_top"
+                android:paddingStart="@dimen/et_padding_start"
+                android:paddingBottom="@dimen/et_padding_bottom"
+                android:textSize="@dimen/item_hint_text_size"
+                android:id="@+id/et_contact_address"
+                android:inputType="text|textMultiLine"
+                android:hint="Address"
+                tools:ignore="HardcodedText,MissingPrefix,TextFields"
+                android:layout_marginStart="@dimen/et_margin_start"
+                android:layout_marginEnd="@dimen/et_margin_end"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_button"
+        android:background="@drawable/bg_round_submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_submit"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/widget_hover_margin_start_end"
+        android:layout_marginEnd="@dimen/widget_hover_margin_start_end"
+        android:layout_marginBottom="@dimen/widget_hover_margin_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="HardcodedText"/>
+</android.support.constraint.ConstraintLayout>

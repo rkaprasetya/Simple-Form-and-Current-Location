@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_login_bg"
+    tools:context=".login.LoginActivity">
+    <EditText
+        android:id="@+id/et_login_username"
+        fontPath="fonts/Montserrat-Medium.ttf"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="21dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:maxEms="10"
+        android:maxLength="33"
+        android:maxLines="1"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl_login_warning"
+        tools:ignore="MissingPrefix" />
+
+    <RelativeLayout android:id="@+id/rl_login_warning" android:background="@color/pink"
+        android:visibility="invisible"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="30dp"
+            android:text="Please fill all fill"
+            android:id="@+id/tv_login_warning"
+            fontPath="fonts/Montserrat-Medium.ttf"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            tools:ignore="MissingPrefix"/>
+        <ImageView
+            android:id="@+id/btn_login_warning_close"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_recruitment_mobile_icon_close_alert"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="close"
+            android:layout_marginEnd="14dp"
+            android:layout_width="14dp" android:layout_height="14dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0dp" android:layout_height="45dp"
+        android:id="@+id/rl_old_password"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="21dp" android:layout_marginEnd="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" app:layout_constraintTop_toBottomOf="@+id/et_login_username">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:maxEms="7"
+            android:id="@+id/et_login_password"
+            android:maxLength="33"
+            android:textSize="13sp"
+            fontPath="fonts/Montserrat-Medium.ttf"
+            android:maxLines="1"
+            android:hint="Password" tools:ignore="MissingPrefix" android:inputType="textPassword"/>
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:text="Login"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_round_login"
+        android:layout_width="264dp"
+        android:layout_height="47dp"
+        android:elevation="150dp"
+        android:textSize="20sp"
+        android:id="@+id/btn_login"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="59dp" app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="61dp" fontPath="fonts/Montserrat-Medium.ttf"
+        android:layout_marginTop="13dp" app:layout_constraintTop_toBottomOf="@+id/rl_old_password"
+        tools:targetApi="lollipop" tools:ignore="MissingPrefix"/>
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/progress_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="156dp" android:layout_marginTop="6dp"
+        />
+
+</android.support.constraint.ConstraintLayout>

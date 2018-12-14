@@ -1,0 +1,94 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="tv_title_margin_top">10dp</dimen>
+    <dimen name="tv_title_margin_start_end">22dp</dimen>
+    <dimen name="et_padding_top">10dp</dimen>
+    <dimen name="et_padding_start">14dp</dimen>
+    <dimen name="et_padding_bottom">15dp</dimen>
+    <dimen name="et_margin_start">19dp</dimen>
+    <dimen name="et_margin_end">21dp</dimen>
+    <dimen name="icon_check_size">17dp</dimen>
+    <dimen name="app_bar_icon">14dp</dimen>
+    <dimen name="app_bar_text_Size">18sp</dimen>
+    <dimen name="app_bar_button_right_text_Size">14sp</dimen>
+    <dimen name="app_bar_margin_top_bottom">15dp</dimen>
+    <dimen name="app_bar_margin_start">21dp</dimen>
+    <dimen name="app_bar_shadow_height">3dp</dimen>
+    <dimen name="app_bar_title_margin_start">21dp</dimen>
+
+    <dimen name="control_panel_ic_width">23dp</dimen>
+    <dimen name="control_panel_ic_height">20dp</dimen>
+    <dimen name="control_panel_ic_size">20dp</dimen>
+    <dimen name="control_panel_ic_margin_top_bottom">14dp</dimen>
+
+    <dimen name="rl_box_height">35dp</dimen>
+    <dimen name="btn_margin_start_end">21dp</dimen>
+
+    <dimen name="rl_sort_margin_start_end">21dp</dimen>
+    <dimen name="rl_sort_margin_top">26dp</dimen>
+    <dimen name="sort_text_size">14sp</dimen>
+    <dimen name="sort_icon_size">30dp</dimen>
+    <dimen name="sort_icon_margin_end">24dp</dimen>
+
+    <dimen name="warning_icon_close_size">14dp</dimen>
+    <dimen name="warning_tv_margin_top_bottom">5dp</dimen>
+
+
+    <dimen name="widget_hover_margin_start_end">21dp</dimen>
+    <dimen name="widget_hover_margin_bottom">10dp</dimen>
+    <dimen name="text_size_button">15sp</dimen>
+    <dimen name="item_margin_top_bottom">20dp</dimen>
+    <dimen name="item_margin_start">21dp</dimen>
+    <dimen name="item_margin_end">20dp</dimen>
+    <dimen name="item_arrow_size">10dp</dimen>
+    <dimen name="item_arrow_margin_end">4dp</dimen>
+    <dimen name="item_hint_text_size">13sp</dimen>
+    <dimen name="item_hint_margin_start">11dp</dimen>
+    <dimen name="item_hint_margin_bottom">8dp</dimen>
+    <dimen name="item_title_text_size">14sp</dimen>
+
+    <dimen name="item_job_title_text_size">14sp</dimen>
+    <dimen name="item_job_level_text_size">11sp</dimen>
+    <dimen name="item_job_level_detail_textssize">13sp</dimen>
+    <dimen name="item_job_detail_margin_start">10dp</dimen>
+    <dimen name="item_job_detail_date_text_size">14sp</dimen>
+    <dimen name="item_job_detail_margin_top">7dp</dimen>
+    <dimen name="item_job_detail_margin_bottom">10dp</dimen>
+
+    <dimen name="item_job_detail_menu_text_size">14sp</dimen>
+
+    <dimen name="item_fragment_child_margin_top">3dp</dimen>
+
+
+    <dimen name="item_selection_margin_top_bottom">20dp</dimen>
+    <dimen name="item_selection_margin_start">21dp</dimen>
+    <dimen name="item_selection_margin_end">20dp</dimen>
+    <dimen name="item_selection_checked_size">17dp</dimen>
+
+    <dimen name="completed_hint_text_size">12sp</dimen>
+    <dimen name="required_margin_start">4dp</dimen>
+    <dimen name="required_text_size">9sp</dimen>
+
+    <dimen name="switch_margin_end">17dp</dimen>
+    <dimen name="switch_margin_top">24dp</dimen>
+    <dimen name="box_height_size">65dp</dimen>
+    <dimen name="box_margin_start_end">16dp</dimen>
+    <dimen name="box_margin_top">10dp</dimen>
+    <dimen name="box_margin_bottom">8dp</dimen>
+    <dimen name="box_padding_top_bottom">10dp</dimen>
+    <dimen name="box_general_margin_top_bottom">24dp</dimen>
+
+    <dimen name="contact_box_height_size">65dp</dimen>
+    <dimen name="contact_box_margin_start_end">10dp</dimen>
+    <dimen name="contact_box_margin_top">10dp</dimen>
+    <dimen name="contact_box_margin_bottom">8dp</dimen>
+
+    <dimen name="contact_box_title_margin_start_end">12dp</dimen>
+    <dimen name="contact_box_arrow_margin_end">12dp</dimen>
+    <dimen name="box_title_text_size">16sp</dimen>
+    <dimen name="box_subtitle_text_size">10sp</dimen>
+    <dimen name="item_applied_margin_top">5dp</dimen>
+    <dimen name="item_job_title_margin_top">28dp</dimen>
+
+    <dimen name="item_select_text_size">14sp</dimen>
+</resources>
